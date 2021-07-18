@@ -1,0 +1,40 @@
+.reddit-list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    background-color:white;
+  }
+
+  .search {
+    background-color: #fff;
+    border-radius: 10rem;
+    display: flex;
+    justify-self: center;
+    transition: all 0.3s;
+    padding-left: 1%;
+    max-width: 18rem;
+  }
+
+  .search:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 0.7rem 3rem darkgrey;
+  }
+
+  .search__field {
+    border: none;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.2rem;
+    width: 20rem;
+    display: flex;
+    justify-self: center;
+    height: 35px;
+  }
+
+  .search__field:focus {
+    outline: none;
+  }
+  .search__field::placeholder {
+    color: rgb(180, 174, 174)
+  }
